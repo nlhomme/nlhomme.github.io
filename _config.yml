@@ -45,7 +45,7 @@ github: nlhomme
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
-reddit: ninolacom
+# reddit: reddit
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
@@ -54,7 +54,7 @@ email: contact@nlhomme.fr
 authors:
   nicolaslhomme:
     name: Nicolas Lhomme
-    bio: A sysadmin who tries do dev some stuff
+    bio: I like to discover new techs and retrogaming
     external-image: false
     picture: assets/images/profile.jpg
 
