@@ -15,7 +15,7 @@ picture: assets/images/profile.jpg
 resume: true
 resume-external: false
 resume-url: assets/documents/nlhomme_cv.pdf
-url: https://nlhomme.github.io
+url: https://nlhomme.fr
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
