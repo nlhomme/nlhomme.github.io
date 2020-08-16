@@ -15,8 +15,8 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: false
-resume-url: assets/documents/nlhomme_cv.pdf
-resume-fr-url: assets/documents/nlhomme_cv.pdf
+resume-url: assets/documents/nlhomme_cv-public.pdf
+resume-fr-url: assets/documents/nlhomme_cv-public.pdf
 
 url: https://nlhomme.fr
 # your url: https://USERNAME.github.io
