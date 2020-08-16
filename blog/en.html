@@ -3,14 +3,16 @@
 # https://jekyllrb.com/docs/pagination/
 layout: page
 title: Blog
-pagination:
-  enabled: true
+lang: en
+ref: blog
 ---
 <section class="list">
-	{% if site.posts.size == 0 %}
+	{% assign posts=site.posts | where:"lang", page.lang | where:"category", "blog" %}
+	{% if posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
-	{% elsif site.pagination.enabled %}
-		{% for post in paginator.posts %}
+	{% elsif site.paginate %}
+		{% assign posts=site.posts | where:"lang", page.lang %}	
+		{% for post in posts %}
 			{% if post.category == 'blog' %}
 				{% if post.hidden != true %}
 					{% include blog-post.html %}
@@ -20,7 +22,8 @@ pagination:
 
 		{% include pagination.html%}
 	{% else %}
-		{% for post in site.posts %}
+		{% assign posts=site.posts | where:"lang", page.lang %}	
+		{% for post in posts %}
 			{% if post.category == 'blog' %}
 				{% if post.hidden != true %}
 					{% include blog-post.html %}

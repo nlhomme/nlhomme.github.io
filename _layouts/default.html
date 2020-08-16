@@ -1,8 +1,14 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
+{% if page.lang == "fr" %}
+<html lang="fr">
+{% endif %}
+{% if page.lang == "en" %}
 <html lang="en">
+{% endif %}
 <head>
 
     {% if site.analytics-google %}
@@ -10,11 +16,15 @@ layout: compress
     {% endif %}
 
     <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <meta name=description content="{{ site.bio }}">
     <meta name=author content="{{ site.name }}">
+    <meta name="google-site-verification" content="kHTWGq2O_1NahZiCYYoTOBJU3HYGhxFpOmwvT3CPWpg" />
 
     {% seo %}
-
+    
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
