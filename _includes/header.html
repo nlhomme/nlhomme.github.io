@@ -1,7 +1,9 @@
 {% if page.title == "Home"
    or page.title == "Blog"
    or page.title == "Projects"
+   or page.title == "Projets"
    or page.title == "Tags"
+   or page.title == "Categories"
 %}{% assign showHeader = true %}{% endif %}
 
 {% if showHeader == true %}
@@ -17,7 +19,12 @@
         {% endif %}
 
         <h1 class="title">{{ site.name }}</h1>
+        {% if page.lang == "fr" %}
         <h2 class="description">{{ site.bio }}</h2>
+        {% endif %}
+        {% if page.lang == "en" %}
+        <h2 class="description">{{ site.bio-en }}</h2>
+        {% endif %}
 
         {% include social-links.html %}
     </header>

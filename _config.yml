@@ -1,6 +1,7 @@
 # main text of home
 name: Nicolas Lhomme
-bio: This site is under construction
+bio: Site en cours de construction
+bio-en: Site under construction
 
 # twitter summary info
 #description: A blog about technology and stuff related
@@ -15,6 +16,8 @@ picture: assets/images/profile.jpg
 resume: true
 resume-external: false
 resume-url: assets/documents/nlhomme_cv.pdf
+resume-fr-url: assets/documents/nlhomme_cv.pdf
+
 url: https://nlhomme.fr
 # your url: https://USERNAME.github.io
 
