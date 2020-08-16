@@ -1,8 +1,9 @@
-<p align="center">This is my website and blog, made with the Indigo theme by [Sergio Kopplin](https://github.com/sergiokopplin/indigo).</p>
+<p align="center">This is my website and blog, made with the Indigo theme by Sergio Kopplin.</p>
 
 ***
 
-This website is optimised to post in english and french.
+This website is made to post in english and french.
+To post only in english, fork the Indigo theme by [Sergio Kopplin](https://github.com/sergiokopplin/indigo)
 
 ## Settings
 
