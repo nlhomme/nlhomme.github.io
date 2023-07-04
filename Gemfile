@@ -22,7 +22,8 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-# Lock jekyll-sass-converter to 2.x on Linux-musl
+# Lock jekyll-sass-converter to 3.x on Linux-musl
 if RUBY_PLATFORM =~ /linux-musl/
-  gem "jekyll-sass-converter", "~> 2.0"
+  gem "jekyll-sass-converter", "~> 3.0"
 end
+
