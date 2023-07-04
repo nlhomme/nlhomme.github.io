@@ -3,15 +3,16 @@
 icon: fas fa-info-circle
 order: 4
 ---
+# Nicolas LHOMME
 
-## De quoi vais-je parler dans ce blog?
-D'informatique rétro pour commencer. J'ai quelques matériels sympa dans mes placards et tiroirs, entre autres:
-* Un Minitel
-* Un iMac G3
-* Un Macintosh SE (dont la RAM doit-être remplacée)
-* Un modem US Robotics 5637 (fax et Internet 56k)
+## En quelques mots
 
-Certains d'entre eux font l'objet de projets visant à remettre en route des technologies obsolètes (Internet 56k par exemple). 
+Quand je ne suis pas devant mon ordinateur, je fais de la radio chez [Prun'](https://www.prun.net/) et du vélo (en tout cas je m'y emploie).
 
-## Comment me contacter si tu as une petite question?
-Tu peux m'écrire un mail ou un pouet sur Mastodon, les liens sont en bas de la colonne de gauche
+J'ai mis longtemps à sortir de ma coquille et à garder mes projets pour moi. Vu les réactions qu'ils peuvent susciter dans mon entourage et qu'une (toute petite) partie d'Internet à a peu près les mêmes idées, j'ai envie de les partager.
+
+Ce blog me paraît être le bon moyen.
+
+## Comment me contacter si tu as une question?
+
+Tu peux m'écrire un mail ou un pouet sur Mastodon, les liens sont en bas de la colonne de gauche.
