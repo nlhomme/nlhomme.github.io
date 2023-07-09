@@ -22,7 +22,7 @@ Il est très probable que je parle d'autre choses, comme mes projets passés et 
 
 ## Pourquoi de l'informatique rétro?
 
-Parce que c'est mon enfance! Mais il ne s'agit pas de vivre dans le passé, mais de se souvenir de ce qu'il y avait avant, de jeter un coup d'oeil dans le rétroviseur le temps d'un montage ou d'un projet.
+Parce que c'est mon enfance! Il ne s'agit pas de vivre dans le passé, mais de se souvenir de ce qu'il y avait avant, de jeter un coup d'oeil dans le rétroviseur le temps d'un montage ou d'un projet.
 
 De plus, nous avons aujourd'hui, avec des choses d'aussi simples qu'un Raspberry Pi et un adaptateur, de quoi reproduire et maquetter des systèmes d'antant, et ainsi refaire fonctionner comme à l'époque nos vieux coucous qui trainent dans nos armoires.
 
