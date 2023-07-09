@@ -2,6 +2,7 @@ name: Spellcheck Action
 on:
   push:
     branches:
+      - '*'
       - '!main'
   pull_request:
 
