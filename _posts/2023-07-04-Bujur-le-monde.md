@@ -22,7 +22,7 @@ Il est très probable que je parle d'autre choses, comme mes projets passés et 
 
 ## Pourquoi de l'informatique rétro?
 
-Parce que c'est mon enfance! Mais il ne s'agit pas de vivre dans le passé, mais de se souvenir de ce qu'il y avait avant, de jeter un coup d'oeil dans le rétroviseur le temps d'un montage ou d'un projet.
+Parce que c'est mon enfance! Il ne s'agit pas de vivre dans le passé, mais de se souvenir de ce qu'il y avait avant, de jeter un coup d'oeil dans le rétroviseur le temps d'un montage ou d'un projet.
 
 De plus, nous avons aujourd'hui, avec des choses d'aussi simples qu'un Raspberry Pi et un adaptateur, de quoi reproduire et maquetter des systèmes d'antant, et ainsi refaire fonctionner comme à l'époque nos vieux coucous qui trainent dans nos armoires.
 
@@ -36,7 +36,7 @@ J'ai ensuite fait un BTS IG (Informatique de Gestion) (option Administrateur de 
 
 J'ai ensuite intégré l'EPSI (école d'ingénierie informatique de Nantes) entre 2013 et 2016, en alternance dans un cabinet immobilier nantais puis à la Banque Postale.
 
-Après 2 ans et demi chez un hébérgeur du Grand Ouest, je suis arrivé à la DSI d'un éditeur de logiciels en 2021 et j'en suis content. Le SI est mon terrain de jeu, l'équipe est chouette et il y a de beaux projets <3
+Après 2 ans et demi chez un hébergeur du Grand Ouest, je suis arrivé à la DSI d'un éditeur de logiciels en 2021 et j'en suis content. Le SI est mon terrain de jeu, l'équipe est chouette et il y a de beaux projets <3
 
 ## Comment me contacter si tu as une question?
 
