@@ -113,7 +113,7 @@ Le grain de sable est cette ligne:
 ```
 
 Le fichier de sortie est un fichier texte qui va tracer les tâches effectuées par l'Action ainsi que leurs résultats. Ce n'est ni plus ni moins qu'un rapport.  
-Les fautes d'ortraphe sont ainsi repérées et inscrites dans le fichier de sortie.
+Les fautes d'ortographe sont ainsi repérées et inscrites dans le fichier de sortie.
 
 Le problème est le suivant: repérer les fautes ET les inscrire au fichier de sortie sont considérées comme **une seule et même tâche**. Celle-ci s'est correctement déroulée, d'où le signal de succès.  
 Sauf que le résultat attendu est que l'Action, parce qu'elle a repéré des a repéré des fautes, renvoie un signal d'échec.

@@ -1,4 +1,5 @@
 BTS
+Brømsø
 Bujur
 Cask
 CD-ROM
@@ -9,6 +10,7 @@ GitHub
 Guingamp
 Homebrew
 IG
+Jonas
 Jordan
 LHOMME
 Linux
@@ -31,6 +33,7 @@ Text
 --------------------------------------------------------------------------------
 allons-y
 always
+archifaux
 be
 blog
 bug
