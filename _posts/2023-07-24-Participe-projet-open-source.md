@@ -63,7 +63,7 @@ jobs:
 
 Très bien, tout est en place, il est temps de faire ronronner la bête.
 
-## Et là, c'est le drâme
+## Et là, c'est le drame
 
 Aussitôt un problème se pose: ça marche.
 ![Une action qui marche quand ça de devrait pas](1-action-false-success.png)
@@ -89,7 +89,7 @@ width
 !!!Spelling check failed!!!
 ```
 
-La configuration de l'Action semble cohérente et la documentation de rojopolis a été suivie, vérifiée et re-vérifiée. Il y a forcément quelque chose que j'ai râté.  
+La configuration de l'Action semble cohérente et la documentation de rojopolis a été suivie, vérifiée et re-vérifiée. Il y a forcément quelque chose que j'ai raté.  
 Après près de 45 minutes de modifications, de tests dans tous les sens et de recherches infructueuses des problèmes connus de Spellcheck, il faut se rendre à l'évidence: je suis dans une impasse et j'ai besoin d'aide.
 
 Et comme Spellcheck est un projet libre, je peux soumettre directement aux développeurs mon problème en ouvrant [une issue](https://github.com/rojopolis/spellcheck-github-actions/issues/166).
@@ -100,7 +100,7 @@ Pour rester synthétique ici (l'issue est longue), voici comment elle se présen
 * Détail complet de la configuration de mon Action
 * Expression du résultat attendu (l'Action doit échouer)
 * Détail du résultat constaté (l'Action se termine avec succès)
-* Demande d'assistance pour trouver ce que j'ai râté
+* Demande d'assistance pour trouver ce que j'ai raté
 
 ## Cause du problème
 
@@ -140,8 +140,8 @@ _nlhomme, c'est moué, je suis crédité au générique! :)_
 
 ## Conclusion
 
-Il y a une idée reçue selon laquelle il faut être développeur pour contribuer à un projet open source. C'est archi faux et mon expérience le prouve, je ne suis moi même pas développeur. L'une des façons les plus simples de partciciper à un projet open source est de contribuer à la traduction d'un logiciel, dans sa langue natale ou non, et ainsi rendre un logiciel ou un service accessible à plus de monde.  
-C'est aussi trouver des problèmes que les développeurs n'ont pas vu ou anticipé. Leur rapporter avec suffisement de détails va leur permettre de les guider dans leurs investigations et corriger le problème le plus vite possible et éviter que d'avantage de monde ne soit impactés.
+Il y a une idée reçue selon laquelle il faut être développeur pour contribuer à un projet open source. C'est archifaux et mon expérience le prouve, je ne suis moi même pas développeur. L'une des façons les plus simples de participer à un projet open source est de contribuer à la traduction d'un logiciel, dans sa langue natale ou non, et ainsi rendre un logiciel ou un service accessible à plus de monde.  
+C'est aussi trouver des problèmes que les développeurs n'ont pas vu ou anticipé. Leur rapporter avec suffisamment de détails va leur permettre de les guider dans leurs investigations et corriger le problème le plus vite possible et éviter que d'avantage de monde ne soit impactés.
 
 ![Succès déverrouillé: participer à un projet open source](4-achievement.png)
 _Sensation ressentie par l'auteur quand son nom est apparu au générique_
