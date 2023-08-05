@@ -1,5 +1,5 @@
 ---
-title: J'ai partcipé à un projet open source
+title: J'ai participé à un projet open source
 date: 2023-07-24 13:00:00 +0200
 categories: [Open source, Succès déverrouillé]
 tags: [open source]     # TAG names should always be lowercase
@@ -32,11 +32,11 @@ En cherchant une GitHub Action répondant à ma problématique, j'ai découvert 
 
 ## Spellcheck, meilleurs ami du rédacteur
 
-[Spellcheck](https://github.com/rojopolis/spellcheck-github-actions) est donc une GitHub Action développée par [Robert 'rojopolis' Jordan](https://github.com/rojopolis). Son but est de parcourir les fichiers contenant du texte, et de relever des fautes de langues (français, anglais, etc...) et de language technique (Python, Markdown, etc...).  
+[Spellcheck](https://github.com/rojopolis/spellcheck-github-actions) est donc une GitHub Action développée par [Robert 'rojopolis' Jordan](https://github.com/rojopolis). Son but est de parcourir les fichiers contenant du texte, et de relever des fautes de langues (français, anglais, etc...) et de langage technique (Python, Markdown, etc...).  
 
 J'ai besoin d'éliminer les fautes:
 
-* En markdown pour le language technique (utilisé pour écrire les articles du blog)
+* En Markdown pour le langage technique (utilisé pour écrire les articles du blog)
 * En français pour la langue
 
 Spellcheck répond au besoin, alors allons-y, ouvrons la documentation et en avant Guingamp:
@@ -151,5 +151,5 @@ _Sensation ressentie par l'auteur quand son nom est apparu au générique_
 Si j'étais développeur, ou tout du moins si j'avais les compétences adéquates, j'aurais pu également corriger moi-même le bug. En effet, Spellcheck est un projet "open source" (en français on dirait "libre): n'importe qui peut consulter son code source, en récupérer une copie ou encore le modifier.  
 Ainsi, j'aurais pu récupérer une copie du code, corriger le bug et soumettre le correctif aux développeurs.
 
-C'est exacement la démarche que j'ai suivis avec le projet [Homebrew Cask](https://github.com/Homebrew/homebrew-cask), un gestionnaire de paquet pour macOS. La mise à jour du logiciel "Sublime Text" n'était pas possible à cause d'une erreur de vérification de la mise à jour.  
+C'est exactement la démarche que j'ai suivi avec le projet [Homebrew Cask](https://github.com/Homebrew/homebrew-cask), un gestionnaire de paquet pour macOS. La mise à jour du logiciel "Sublime Text" n'était pas possible à cause d'une erreur de vérification de la mise à jour.  
 J'ai analysé l'erreur, l'ai traité et [envoyé le correctif](https://github.com/Homebrew/homebrew-cask/pull/152315) aux développeurs.
