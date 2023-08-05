@@ -9,8 +9,8 @@ matrix:
     - .github/workflows/.wordlist.txt
   pipeline:
   - pyspelling.filters.markdown:
-      ignores:
-      - code
+          markdown_extensions:
+          - pymdownx.superfences
   - pyspelling.filters.html:
       comments: false
       ignores:
