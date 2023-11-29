@@ -133,7 +133,7 @@ Comme exprimé précédemment, jonasbn est un des développeurs de Spellcheck, i
 ![Le correctif, en couleurs](2-pr-fix.png)
 _En rouge, le code enlevé, en vert le code ajouté_
 
-Une fois le correctif versé au code source de Spellcheck, jonasbn a publié une nouvelle version de Spellcheck (la [0.33.1](https://github.com/rojopolis/spellcheck-github-actions/releases/tag/0.33.1)), contenant le correctif:
+Une fois le correctif versé au code source, jonasbn a publié une nouvelle version de Spellcheck (la [0.33.1](https://github.com/rojopolis/spellcheck-github-actions/releases/tag/0.33.1)), contenant le correctif:
 
 ![Le correctif, en couleurs](3-release-notes.png)
 _nlhomme, c'est moué, je suis crédité au générique! :)_
