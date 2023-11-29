@@ -1,6 +1,6 @@
 ---
 title: J'ai participé à un projet open source
-date: 2023-08-05 19:00:00 +0200
+date: 2023-11-29 13:00:00 +0200
 categories: [Open source, Succès déverrouillé]
 tags: [open source]     # TAG names should always be lowercase
 img_path: /assets/img/posts/2023-07-24-participe_projet_open_source/
@@ -138,6 +138,10 @@ Une fois le correctif versé au code source de Spellcheck, jonasbn a publié une
 ![Le correctif, en couleurs](3-release-notes.png)
 _nlhomme, c'est moué, je suis crédité au générique! :)_
 
+## Pour aller plus loin
+
+Si j'étais développeur, ou tout du moins si j'avais les compétences adéquates, j'aurais pu également corriger moi-même le bug. En effet, Spellcheck est un projet "open source" (en français on dirait "libre): n'importe qui peut consulter son code source, en récupérer une copie ou encore le modifier.  
+
 ## Conclusion
 
 Il y a une idée reçue selon laquelle il faut être développeur pour contribuer à un projet open source. C'est archifaux et mon expérience le prouve, je ne suis moi même pas développeur. L'une des façons les plus simples de participer à un projet open source est de contribuer à la traduction d'un logiciel, dans sa langue natale ou non, et ainsi rendre un logiciel ou un service accessible à plus de monde.  
@@ -146,9 +150,6 @@ C'est aussi trouver des problèmes que les développeurs n'ont pas vu ou anticip
 ![Succès déverrouillé: participer à un projet open source](4-achievement.png)
 _Sensation ressentie par l'auteur quand son nom est apparu au générique_
 
-## Pour aller plus loin
-
-Si j'étais développeur, ou tout du moins si j'avais les compétences adéquates, j'aurais pu également corriger moi-même le bug. En effet, Spellcheck est un projet "open source" (en français on dirait "libre): n'importe qui peut consulter son code source, en récupérer une copie ou encore le modifier.  
 Ainsi, j'aurais pu récupérer une copie du code, corriger le bug et soumettre le correctif aux développeurs.
 
 C'est exactement la démarche que j'ai suivi avec le projet [Homebrew Cask](https://github.com/Homebrew/homebrew-cask), un gestionnaire de paquet pour macOS. La mise à jour du logiciel "Sublime Text" n'était pas possible à cause d'une erreur de vérification de la mise à jour.  
