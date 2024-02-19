@@ -28,5 +28,5 @@
 #   url:  ''                  # Fill with your stackoverflow homepage
 
 - type: pixelfed
-  icon: 'fab instagram'   # icons powered by <https://fontawesome.com/>
+  icon: 'fab fa-instagram'   # icons powered by <https://fontawesome.com/>
   url:  'https://pixelfed.social/nlhomme'                  # Fill with your Linkedin homepage
