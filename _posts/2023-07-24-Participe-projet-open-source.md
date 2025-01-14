@@ -3,7 +3,7 @@ title: J'ai participé à un projet open source
 date: 2023-11-29 13:00:00 +0200
 categories: [Open source, Succès déverrouillé]
 tags: [open source]     # TAG names should always be lowercase
-img_path: /assets/img/posts/2023-07-24-participe_projet_open_source/
+media_subpath: /assets/img/posts/2023-07-24-participe_projet_open_source/
 ---
 
 > Dans cet article je raconte une histoire. Dans un soucis d'accessibilité au plus grand nombre les aspects techniques sont volontairement pas ou peu détaillées.
