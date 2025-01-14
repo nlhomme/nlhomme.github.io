@@ -16,7 +16,7 @@ timezone: Europe/Paris
 
 title: Nicolas LHOMME # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Blog d'un informaticien qui bricole des choses peu utiles # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Blog d'un informaticien qui bricole des choses moins utiles
