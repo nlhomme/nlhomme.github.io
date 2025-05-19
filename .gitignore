@@ -22,7 +22,9 @@ package-lock.json
 assets/js/dist
 
 # macOS
-.DS_Store# Bundler cache
+.DS_Store
+
+# Bundler cache
 .bundle
 vendor
 Gemfile.lock
