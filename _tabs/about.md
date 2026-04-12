@@ -9,7 +9,7 @@ order: 4
 
 Je suis administrateur systèmes et réseaux à la DSI d'un éditeur de logiciels.
 
-Quand je ne suis pas devant mon ordinateur, je fais de la radio chez [Prun'](https://www.prun.net/) et du vélo (en tout cas je m'y emploie).
+Quand je ne suis pas devant mon ordinateur, je fais du vélo (en tout cas je m'y emploie).
 
 J'ai mis longtemps à sortir de ma coquille et à garder mes projets pour moi. Vu les réactions qu'ils peuvent susciter dans mon entourage non-informaticien (on me prend pour un fou) et qu'une toute petite partie d'Internet à a peu près les mêmes idées que moi, j'ai envie de les partager.
 
@@ -17,4 +17,4 @@ Ce blog me paraît être le bon moyen.
 
 ## Comment me contacter si tu as une question?
 
-Tu peux m'écrire un mail ou un pouet sur Mastodon, les liens sont en bas de la colonne de gauche.
+Tu peux m'écrire un mail ou un message sur LinkedIn, les liens sont en bas de la colonne de gauche.
