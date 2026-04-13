@@ -463,6 +463,167 @@
       border-left-color: var(--link-color);
     }
 
+    /* ========== Page header (archives/tags/categories) ========== */
+
+    .page-title {
+      font-family: var(--font-family-heading);
+      font-weight: 900;
+      font-size: 1.9rem;
+      color: var(--heading-color);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.35rem;
+    }
+    .page-subtitle {
+      color: var(--text-muted-color);
+      font-size: 0.95rem;
+      margin-bottom: 2.25rem;
+    }
+
+    /* ========== Archives timeline ========== */
+
+    .archives .year-heading {
+      font-family: var(--font-family-heading);
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: var(--heading-color);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--main-border-color);
+    }
+    .archives .year-heading:first-child { margin-top: 0; }
+
+    .timeline {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 1rem;
+      margin: 0 0 1.5rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0.9rem;
+      bottom: 0.9rem;
+      left: 0;
+      width: 2px;
+      background: var(--main-border-color);
+    }
+    .timeline li {
+      position: relative;
+      padding: 0.65rem 0 0.65rem 1.5rem;
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -0.4rem;
+      top: 1.1rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: var(--main-bg);
+      border: 2px solid var(--link-color);
+    }
+    .timeline .timeline-date {
+      flex: 0 0 auto;
+      min-width: 3.2rem;
+      font-size: 0.78rem;
+      color: var(--text-muted-color);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .timeline a {
+      color: var(--heading-color);
+      font-family: var(--font-family-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+    .timeline a:hover {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    /* ========== Categories list ========== */
+
+    .category-list {
+      list-style: none;
+      padding: 0;
+    }
+    .category-list > li {
+      margin-bottom: 1.5rem;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--card-shadow);
+    }
+    .category-list .cat-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-family-heading);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--heading-color);
+      margin-bottom: 0.9rem;
+    }
+    .category-list .cat-header svg.icon {
+      width: 1rem;
+      height: 1rem;
+      color: var(--link-color);
+    }
+    .category-list .cat-count {
+      font-size: 0.78rem;
+      color: var(--text-muted-color);
+      font-weight: 400;
+      background: var(--inline-code-bg);
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+    }
+    .category-list .cat-posts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .category-list .cat-posts li {
+      padding: 0.55rem 0;
+      border-top: 1px solid var(--main-border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .category-list .cat-posts li:first-child { border-top: none; padding-top: 0; }
+    .category-list .cat-posts a {
+      color: var(--text-color);
+      font-size: 0.95rem;
+    }
+    .category-list .cat-posts a:hover {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+    .category-list .cat-posts time {
+      color: var(--text-muted-color);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    /* ========== Tag cloud ========== */
+
+    .tag-cloud {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .tag-cloud .tag-pill {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.9rem;
+    }
+
     /* ========== Home: post list cards ========== */
 
     #post-list { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -664,6 +825,9 @@
     <symbol id="i-hashtag" viewBox="0 0 448 512"><path fill="currentColor" d="M440.667 182.109l7.143-40c1.005-5.625-2.317-11.109-7.43-11.109h-75.928l13.714-76.788C379.171 48.588 375.849 43 370.736 43h-40.537a12.49 12.49 0 0 0-12.206 10.021L303.285 132H221.163l13.714-76.788C235.174 48.588 231.852 43 226.739 43h-40.537a12.49 12.49 0 0 0-12.206 10.021L159.661 132H83.495a12.49 12.49 0 0 0-12.206 10.021l-7.143 40C63.142 187.646 66.465 193 71.577 193h75.928l-20.572 116H57.205a12.49 12.49 0 0 0-12.206 10.021l-7.143 40C36.85 364.646 40.173 370 45.286 370h75.928l-13.714 76.788C106.505 452.413 109.827 458 114.94 458h40.537a12.49 12.49 0 0 0 12.206-10.021L182.714 370h82.122l-13.714 76.788C250.14 452.413 253.463 458 258.576 458h40.537a12.49 12.49 0 0 0 12.206-10.021L325.339 370h76.166a12.49 12.49 0 0 0 12.206-10.021l7.143-40C421.858 314.354 418.535 309 413.423 309h-75.928l20.572-116h75.928a12.49 12.49 0 0 0 12.206-10.021zM272.719 309h-82.122l20.572-116h82.122l-20.572 116z"/></symbol>
     <symbol id="i-clock" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></symbol>
     <symbol id="i-list" viewBox="0 0 512 512"><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 576 512"><path fill="currentColor" d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 448 512"><path fill="currentColor" d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></symbol>
+    <symbol id="i-archive" viewBox="0 0 512 512"><path fill="currentColor" d="M32 32H480c17.7 0 32 14.3 32 32V96c0 17.7-14.3 32-32 32H32C14.3 128 0 113.7 0 96V64C0 46.3 14.3 32 32 32zm0 128H480V416c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V160zm128 80c0 8.8 7.2 16 16 16H336c8.8 0 16-7.2 16-16s-7.2-16-16-16H176c-8.8 0-16 7.2-16 16z"/></symbol>
   </svg>
 
   <header id="topbar-wrapper">
@@ -687,6 +851,15 @@
     <ul class="sidebar-nav">
       <li{% if page.url == "/" %} class="active"{% endif %}>
         <a href="/"><svg class="icon"><use href="#i-home"/></svg>Accueil</a>
+      </li>
+      <li{% if page.url == "/categories/" %} class="active"{% endif %}>
+        <a href="/categories/"><svg class="icon"><use href="#i-layers"/></svg>Catégories</a>
+      </li>
+      <li{% if page.url == "/tags/" %} class="active"{% endif %}>
+        <a href="/tags/"><svg class="icon"><use href="#i-tag"/></svg>Tags</a>
+      </li>
+      <li{% if page.url == "/archives/" %} class="active"{% endif %}>
+        <a href="/archives/"><svg class="icon"><use href="#i-archive"/></svg>Archives</a>
       </li>
       <li{% if page.url == "/about/" %} class="active"{% endif %}>
         <a href="/about/"><svg class="icon"><use href="#i-user"/></svg>À propos</a>

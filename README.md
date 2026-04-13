@@ -2,7 +2,7 @@
 
 Source of [blog.lhomme.xyz](https://blog.lhomme.xyz), the personal blog of Nicolas LHOMME. Built with [Eleventy](https://www.11ty.dev), deployed on Cloudflare Pages.
 
-The design mimics the Chirpy Jekyll theme the blog ran on previously: dark palette, fixed left sidebar with avatar + nav + social icons, card-based post list, and a right panel (on screens ≥1200px) with trending tags, recently published posts, and — on articles — a table of contents. Everything lives in a single inline stylesheet inside `src/_includes/base.njk`. The JavaScript is kept to a minimum: a mobile sidebar toggle and a small script that builds the per-post TOC from the article's headings. Source Sans 3 and Lato are loaded from Google Fonts.
+The design mimics the Chirpy Jekyll theme the blog ran on previously: dark palette, fixed left sidebar with avatar, nav (Accueil / Catégories / Tags / Archives / À propos) and social icons, card-based post list, and a right panel (on screens ≥1200px) with trending tags, recently published posts, and — on articles — a table of contents. The listing pages are generated from Eleventy collections: `/archives/` as a year-grouped timeline, `/categories/` as a grouped list, and `/tags/` as a tag cloud. Everything lives in a single inline stylesheet inside `src/_includes/base.njk`. The JavaScript is kept to a minimum: a mobile sidebar toggle and a small script that builds the per-post TOC from the article's headings. Source Sans 3 and Lato are loaded from Google Fonts.
 
 ## Develop
 
@@ -23,6 +23,9 @@ src/
     post.njk            # Post layout
   posts/                # Articles (Markdown + YAML front matter)
   index.njk             # Home page
+  archives.njk          # /archives/ timeline
+  categories.njk        # /categories/ grouped list
+  tags.njk              # /tags/ cloud
   about.md              # /about/
   robots.txt
   assets/               # Images, favicons

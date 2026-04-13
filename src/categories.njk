@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Catégories
+permalink: /categories/
+eleventyExcludeFromCollections: true
+---
+<header>
+  <h1 class="page-title">Catégories</h1>
+  <p class="page-subtitle">{{ collections.categoryList.length }} catégorie{% if collections.categoryList.length > 1 %}s{% endif %}</p>
+</header>
+
+<ul class="category-list">
+  {% for cat in collections.categoryList %}
+  <li>
+    <div class="cat-header">
+      <svg class="icon"><use href="#i-folder"/></svg>
+      <span>{{ cat.name }}</span>
+      <span class="cat-count">{{ cat.count }} article{% if cat.count > 1 %}s{% endif %}</span>
+    </div>
+    <ul class="cat-posts">
+      {% for post in cat.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | dateFr }}</time>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+</ul>

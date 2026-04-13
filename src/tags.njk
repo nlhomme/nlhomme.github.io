@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Tags
+permalink: /tags/
+eleventyExcludeFromCollections: true
+---
+<header>
+  <h1 class="page-title">Tags</h1>
+  <p class="page-subtitle">{{ collections.tagList.length }} tag{% if collections.tagList.length > 1 %}s{% endif %}</p>
+</header>
+
+<ul class="tag-cloud">
+  {% for tag in collections.tagList %}
+  <li><span class="tag-pill">{{ tag.name }}<span class="tag-count">{{ tag.count }}</span></span></li>
+  {% endfor %}
+</ul>

@@ -24,7 +24,7 @@ npm run clean        # delete _site/
 ## Layout
 
 ```
-.eleventy.js            # Eleventy config (CommonJS) — posts + tagList collections, dateFr/isoDate filters
+.eleventy.js            # Eleventy config (CommonJS) — posts / tagList / categoryList / archiveYears collections + date filters
 package.json            # npm scripts and single dep: @11ty/eleventy
 src/
   _data/site.json       # Site-wide settings (title, tagline, url, etc.)
@@ -35,11 +35,24 @@ src/
     posts.json          # Directory data: layout + permalink template
     YYYY-MM-DD-slug.md  # Posts (Markdown + front matter)
   index.njk             # Home page — post list
+  archives.njk          # /archives/ — timeline grouped by year
+  categories.njk        # /categories/ — grouped list of posts by category
+  tags.njk              # /tags/ — tag cloud
   about.md              # /about/
   robots.txt            # Passthrough
   assets/               # Passthrough → /assets/ (images, favicons)
 _site/                  # Build output (gitignored)
 ```
+
+## Sidebar nav and listing pages
+
+The left sidebar has five entries — Accueil, Catégories, Tags, Archives, À propos. The three listing pages are driven by collections defined in `.eleventy.js`:
+
+- `collections.categoryList` — `[{ name, count, posts[] }]` sorted alphabetically, used by `src/categories.njk`.
+- `collections.tagList` — `[{ name, count }]` sorted by count desc, used by `src/tags.njk` (tag cloud) and the right panel *Tags populaires*.
+- `collections.archiveYears` — `[{ year, posts[] }]` sorted newest first, used by `src/archives.njk` to render the year-grouped timeline.
+
+There are no per-tag or per-category archive pages yet. Tag pills on `/tags/` and in the right panel are visual-only; if we want `/tags/<slug>/` pages later, add an Eleventy pagination template over `collections.tagList`.
 
 ## Right panel (`#panel-wrapper`)
 
