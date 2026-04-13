@@ -4,7 +4,7 @@ title: À propos
 permalink: /about/
 eleventyExcludeFromCollections: true
 ---
-<div class="page-content">
+<div class="content">
 
 # Nicolas LHOMME
 

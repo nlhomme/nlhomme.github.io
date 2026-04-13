@@ -2,7 +2,7 @@
 
 Source of [blog.lhomme.xyz](https://blog.lhomme.xyz), the personal blog of Nicolas LHOMME. Built with [Eleventy](https://www.11ty.dev), deployed on Cloudflare Pages.
 
-The design goal: HTML + Markdown, one inline stylesheet, the smallest possible amount of JavaScript (only a theme toggle).
+The design mimics the Chirpy Jekyll theme the blog ran on previously: dark palette, fixed left sidebar with avatar + nav + social icons, card-based post list, and a right panel (on screens ≥1200px) with trending tags, recently published posts, and — on articles — a table of contents. Everything lives in a single inline stylesheet inside `src/_includes/base.njk`. The JavaScript is kept to a minimum: a mobile sidebar toggle and a small script that builds the per-post TOC from the article's headings. Source Sans 3 and Lato are loaded from Google Fonts.
 
 ## Develop
 
@@ -39,7 +39,7 @@ tags: [tag1, tag2]
 ---
 ```
 
-The URL is derived from the filename: `2026-04-12-mon-article.md` → `/posts/mon-article/`.
+The URL is derived from the filename verbatim (date prefix stripped, case preserved): `2026-04-12-Mon-Article.md` → `/posts/Mon-Article/`. Keep existing filename capitalization stable to avoid breaking inbound links.
 
 ## Deploy
 

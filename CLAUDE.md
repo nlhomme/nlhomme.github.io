@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal blog of Nicolas LHOMME (https://blog.lhomme.xyz), built with [Eleventy](https://www.11ty.dev) (11ty 3.x). Content is in French. Deployed to Cloudflare Pages.
 
-The design is deliberately minimal: a single inline-CSS layout, no client-side framework, one small vanilla-JS snippet for the light/dark toggle.
+The design mimics the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) Jekyll theme the blog used previously: dark-only palette, fixed left sidebar with avatar + nav + socials, card-based post list, right panel (≥1200px) with trending tags + recently published + per-post table of contents, Source Sans 3 / Lato fonts (loaded from Google Fonts). The whole layout lives as inline CSS inside `src/_includes/base.njk`. Client-side JS is kept small: a mobile sidebar toggle, and a TOC generator that scans `article .content` headings on post pages, builds a linked outline in `#panel-wrapper`, and scroll-spies the active section.
 
 ## Keep README.md in sync — always
 
@@ -24,12 +24,12 @@ npm run clean        # delete _site/
 ## Layout
 
 ```
-.eleventy.js            # Eleventy config (CommonJS)
+.eleventy.js            # Eleventy config (CommonJS) — posts + tagList collections, dateFr/isoDate filters
 package.json            # npm scripts and single dep: @11ty/eleventy
 src/
   _data/site.json       # Site-wide settings (title, tagline, url, etc.)
   _includes/
-    base.njk            # Root HTML shell with inline CSS + theme toggle JS
+    base.njk            # Root HTML shell: inline CSS, left sidebar, right #panel-wrapper, sidebar-toggle + TOC JS
     post.njk            # Post layout (extends base.njk)
   posts/
     posts.json          # Directory data: layout + permalink template
@@ -41,20 +41,32 @@ src/
 _site/                  # Build output (gitignored)
 ```
 
+## Right panel (`#panel-wrapper`)
+
+Rendered inline in `base.njk` next to `main`, visible only at ≥1200px (hidden below via CSS). Contents:
+
+- **Tags populaires** — driven by the `tagList` collection in `.eleventy.js` (aggregates `post.data.tags`, drops the `posts` tag, sorts by count). Rendered as non-clickable pills; there are no tag archive pages yet.
+- **Récemment publié** — first 5 entries of `collections.posts`.
+- **Contenu** (post pages only) — injected client-side by a small script at the bottom of `base.njk`. It runs only when `article .post-header` exists, scans `h2`/`h3` inside `article .content`, assigns ids to headings that lack them, and builds `.toc-list`. A scroll listener toggles `.active` on the current section.
+
+The TOC box is prepended to `#panel-wrapper` so it sits above tags and recent posts on post pages.
+
 ## Post URLs
 
-Posts live at `/posts/<slug>/`, where `<slug>` is derived from the filename (date stripped, lowercased via Eleventy's `slug` filter). This mirrors the previous Jekyll/Chirpy permalinks so inbound links keep working.
+Posts live at `/posts/<slug>/`, where `<slug>` is taken **verbatim** from the filename (date prefix stripped, case preserved). This mirrors the previous Jekyll/Chirpy permalinks exactly — including capital letters — so inbound links like `/posts/Bujur-le-monde/` keep working. Do not lowercase filenames on existing posts.
 
 Post front matter looks like:
 
 ```yaml
 ---
 title: Titre de l'article
-date: 2026-04-12 14:00:00 +0200
+date: 2026-04-12T14:00:00+02:00
 categories: [Projets, TRMNL]
 tags: [trmnl, cloudflare]
 ---
 ```
+
+The `date` must be an ISO-8601 string — plain Jekyll-style `YYYY-MM-DD HH:MM:SS +0200` is rejected by Eleventy's YAML parser.
 
 Images in posts use absolute paths like `/assets/img/posts/<post-folder>/<file>` — there is no `media_subpath` shortcut.
 

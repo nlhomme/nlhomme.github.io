@@ -6,6 +6,19 @@ module.exports = function (eleventyConfig) {
     api.getFilteredByGlob("src/posts/*.md").sort((a, b) => b.date - a.date)
   );
 
+  eleventyConfig.addCollection("tagList", (api) => {
+    const counts = {};
+    api.getFilteredByGlob("src/posts/*.md").forEach((post) => {
+      (post.data.tags || []).forEach((tag) => {
+        if (tag === "posts") return;
+        counts[tag] = (counts[tag] || 0) + 1;
+      });
+    });
+    return Object.entries(counts)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .map(([name, count]) => ({ name, count }));
+  });
+
   eleventyConfig.addFilter("dateFr", (value) => {
     const d = value instanceof Date ? value : new Date(value);
     return d.toLocaleDateString("fr-FR", {
