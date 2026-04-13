@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Archives
+permalink: /archives/
+eleventyExcludeFromCollections: true
+---
+<header>
+  <h1 class="page-title">Archives</h1>
+  <p class="page-subtitle">{{ collections.posts.length }} article{% if collections.posts.length > 1 %}s{% endif %} publié{% if collections.posts.length > 1 %}s{% endif %}</p>
+</header>
+
+<section class="archives">
+  {% for entry in collections.archiveYears %}
+    <h2 class="year-heading">{{ entry.year }}</h2>
+    <ul class="timeline">
+      {% for post in entry.posts %}
+      <li>
+        <span class="timeline-date">{{ post.date | monthDayFr }}</span>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>

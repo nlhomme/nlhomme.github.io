@@ -1,27 +1,15 @@
-# Bundler cache
-.bundle
-vendor
-Gemfile.lock
-
-# Jekyll cache
-.jekyll-cache
-.jekyll-metadata
+# Eleventy build output
 _site
 
-# RubyGems
-*.gem
-
-# NPM dependencies
+# Node
 node_modules
-package-lock.json
 
-# IDE configurations
+# macOS
+.DS_Store
+
+# IDE
 .idea
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/tasks.json
-
-# Misc
-_sass/vendors
-assets/js/dist
