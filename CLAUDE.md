@@ -77,6 +77,6 @@ Cloudflare Pages is configured via the dashboard (no workflow file):
 - Framework preset: none
 - Build command: `npm run build`
 - Build output directory: `_site`
-- Node version: 20 (or newer)
+- Node version: pinned by `.nvmrc` at the repo root (currently `20`). Cloudflare Pages reads it automatically, so no `NODE_VERSION` env var is needed.
 
 Any push to `main` triggers a build and deploy automatically.

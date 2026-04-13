@@ -45,9 +45,10 @@ The URL is derived from the filename verbatim (date prefix stripped, case preser
 
 Cloudflare Pages is connected to this repo. Build settings:
 
+- Framework preset: none
 - Build command: `npm run build`
 - Output directory: `_site`
-- Node version: 20+
+- Node version: pinned via `.nvmrc` (currently `20`); Cloudflare reads the file automatically.
 
 Every push to `main` triggers a build and deploy.
 
