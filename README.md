@@ -1,43 +1,56 @@
-# Chirpy Starter
+# blog.lhomme.xyz
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Source of [blog.lhomme.xyz](https://blog.lhomme.xyz), the personal blog of Nicolas LHOMME. Built with [Eleventy](https://www.11ty.dev), deployed on Cloudflare Pages.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+The design goal: HTML + Markdown, one inline stylesheet, the smallest possible amount of JavaScript (only a theme toggle).
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Develop
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
-
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+```bash
+npm install
+npm run dev      # live-reload server on http://localhost:8080
+npm run build    # production build → _site/
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## Layout
 
-## Usage
+```
+.eleventy.js            # Eleventy config
+src/
+  _data/site.json       # Site-wide settings
+  _includes/
+    base.njk            # HTML shell + inline CSS + theme toggle
+    post.njk            # Post layout
+  posts/                # Articles (Markdown + YAML front matter)
+  index.njk             # Home page
+  about.md              # /about/
+  robots.txt
+  assets/               # Images, favicons
+```
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+New posts go in `src/posts/` as `YYYY-MM-DD-slug.md` with this front matter:
 
-## Contributing
+```yaml
+---
+title: Titre de l'article
+date: 2026-04-12T14:00:00+02:00
+categories: [Catégorie]
+tags: [tag1, tag2]
+---
+```
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+The URL is derived from the filename: `2026-04-12-mon-article.md` → `/posts/mon-article/`.
+
+## Deploy
+
+Cloudflare Pages is connected to this repo. Build settings:
+
+- Build command: `npm run build`
+- Output directory: `_site`
+- Node version: 20+
+
+Every push to `main` triggers a build and deploy.
 
 ## License
 
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+[MIT](LICENSE).

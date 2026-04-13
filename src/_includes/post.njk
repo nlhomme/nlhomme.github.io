@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+<article>
+  <header class="post-header">
+    <h1>{{ title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | dateFr }}</time>
+      {% if categories %}{% for c in categories %}<span class="tag">{{ c }}</span>{% endfor %}{% endif %}
+    </div>
+  </header>
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+  <nav class="post-footer-nav">
+    <a href="/">← Retour aux articles</a>
+  </nav>
+</article>
