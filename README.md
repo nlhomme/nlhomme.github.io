@@ -57,4 +57,4 @@ Every push to `main` triggers a build and deploy.
 
 ## License
 
-[MIT](LICENSE).
+Content is licensed under [CC BY 4.0](LICENSE).
